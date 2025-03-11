@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/proyectoDia4.css">
+    <script src="../js/proyecto4.js"></script>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <table>
+        <tr>
+            <td colspan="2" class="visor"><input type="number" id="visor1" required autocomplete="off"></td>
+            <td colspan="2" class="visor"><input type="number" id="visor2" required autocomplete="off"></td>
+        </tr>
+        <tr>
+            <td class="vacio"></td>
+            <td class="vacio"></td>
+            <td class="vacio"></td>
+            <td class="vacio"></td>
+        </tr>
+        <tr>
+            <td class="lleno"><button onclick="suma()">+</button></td>
+            <td class="lleno"><button onclick="resta()">-</button></td>
+            <td class="lleno"><button onclick="multiplicacion()">X</button></td>
+            <td class="lleno"><button onclick="division()">/</button></td>
+        </tr>
+        <tr>
+            <td  class="lleno" colspan="2"><button onclick="potencia()">Potencia</button></td>
+            <td class="lleno" colspan="2"><button onclick="raiz()">Raiz</button></td>
+        </tr>
+        <tr>
+            <td class="lleno" colspan="2"><button onclick="absoluto()">Absoluto</button></td>
+            <td class="lleno" colspan="2"><button onclick="random()">random</button></td>
+        </tr>
+        <tr>
+            <tr>
+                <td colspan="4" id="visor"></td>
+            </tr>
+            <tr>
+                <td class="lleno"> <button onclick="round()">round</button></td>
+                <td class="lleno"> <button onclick="floor()">floor</button></td>
+                <td class="lleno"><button onclick="ceil()">ceil</button></td>
+                <td class="lleno"><button onclick="reset()">reset</button></td>
+            </tr>
+        </tr>
+    </table>
+</body>
+</html>
